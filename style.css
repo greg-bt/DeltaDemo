@@ -1,0 +1,81 @@
+:root {
+	--bgdark: rgb(33,37,41);
+	--fontfamily: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+* {
+	padding: 0;
+	margin:  0;
+}
+
+body {
+	height: 500px;
+	margin: 0;
+	
+	font-weight: 400;
+	font-family: var(--fontfamily);
+
+	background-color: rgb(248,249,250);
+	padding-top: 48px;
+}
+
+nav * {color: white;}
+nav {
+	top:	0;
+	left:	0;
+	right:	0;
+	position: fixed;
+	padding: .5rem .3rem .5rem .8rem;
+	background-color: var(--bgdark);
+	
+	color: rgba(255, 154, 65, 0.78);
+    cursor: default;
+	font-size: 1.5rem;
+}
+
+nav h5      { display: inline }
+nav .right  { float: right; color: rgba(255, 154, 65, 0.78); }
+nav a:hover { color:rgb(255, 210, 187) }
+nav a {
+    transition: all .15s; 
+    text-decoration: none;
+	padding-right: .5rem;
+}
+
+main {
+	padding-left:  .8rem;
+	padding-right: .8rem;
+    max-width: 800px;
+    margin: 1rem auto 1rem auto;
+}
+
+.img {
+	align-self: center;
+	margin: 1rem;
+	scale: 0.8;
+}
+
+.shadow {box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);}
+.hover:hover { transform: scale(1.005) }
+
+.list-container {
+	padding: 1rem;
+	margin-top: 1rem;
+	border-radius: .4rem;
+	background-color: #fff;
+}
+
+.list-item {
+	border-top: 1px solid #dee2e6;
+	padding: 1rem;
+	transition: all .15s; 
+	display: flex;
+}
+
+.list-item strong { display: block }
+.list-item a:hover {color:#912200;}
+.list-item a {
+    text-decoration: none;
+    color: black;
+}
+
