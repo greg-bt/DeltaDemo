@@ -34,12 +34,18 @@ nav {
 }
 
 nav h5      { display: inline }
-nav .right  { float: right; color: rgba(255, 154, 65, 0.78); }
 nav a:hover { color:rgb(255, 210, 187) }
 nav a {
     transition: all .15s; 
     text-decoration: none;
 	padding-right: .5rem;
+}
+
+nav .right  {
+	float: right;
+	color: rgba(255, 154, 65, 0.78); 
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 main {
@@ -50,8 +56,8 @@ main {
 }
 
 .img {
-	align-self: center;
-	margin: 1rem;
+	float: right;
+	margin: .6rem 0 0 auto;
 	scale: 0.8;
 }
 
@@ -77,5 +83,10 @@ main {
 .list-item a {
     text-decoration: none;
     color: black;
+}
+
+.thumbnail {
+	width: 5rem;
+	height: 5rem;
 }
 
